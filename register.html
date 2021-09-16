@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./register_styles.css" />
+    <title>Techno Summit Registration</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Registration</div>
+      <div class="content">
+        <form action="#">
+          <div class="user-details">
+            <div class="gender-details">
+              <input type="radio" name="gender" id="dot-1" />
+              <input type="radio" name="gender" id="dot-2" />
+              <input type="radio" name="gender" id="dot-3" />
+              <span class="details">Title</span>
+              <div class="category">
+                <label for="dot-1">
+                  <span class="dot one"></span>
+                  <span class="gender">Mr.</span>
+                </label>
+                <label for="dot-2">
+                  <span class="dot two"></span>
+                  <span class="gender">Ms.</span>
+                </label>
+              </div>
+            </div>
+            <div class="input-box-full">
+              <span class="details">Full Name</span>
+              <input type="text" placeholder="Enter your name" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Email</span>
+              <input type="text" placeholder="Enter your email" required />
+            </div>
+            <div class="input-box">
+              <span class="details">Phone Number</span>
+              <input type="text" placeholder="Enter your number" required />
+            </div>
+            <div class="input-box-full">
+              <span class="details">College/Institution</span>
+              <input
+                type="text"
+                placeholder="Enter your college name"
+                required
+              />
+            </div>
+            <div class="input-box-full">
+              <span class="details">Expected Graduation Year</span>
+              <select name="graduation-year" class="select-option" required>
+                <option value="">Select Year</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+              </select>
+            </div>
+            <div class="input-box">
+              <span class="details">City</span>
+              <input type="text" placeholder="Enter City name" required />
+            </div>
+            <div class="input-box">
+              <span class="details">State</span>
+              <input type="text" placeholder="Enter State name" required />
+            </div>
+            <div class="input-box-full">
+              <span class="details">Event</span>
+              <select name="event" class="select-option" required>
+                <option value="">Select Event</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+              </select>
+            </div>
+            <div class="input-box-full">
+              <span class="details"
+                >Payment Method
+                <span
+                  class="tooltip"
+                  data-tooltip="Attach the Screenshot of the Payment and Enter the Transaction ID"
+                  >?</span
+                >
+              </span>
+              <select name="event" class="select-option" required>
+                <option value="">Choose</option>
+                <option value="Account Transfer">Account Transfer</option>
+                <option value="UPI">UPI</option>
+              </select>
+            </div>
+            <div class="input-screenshot">
+              <span class="details">Screen Shot</span>
+              <input id="screenshot" type="file" accept="image/*" required />
+            </div>
+            <div class="input-box-full">
+              <span class="details">Transaction ID</span>
+              <input type="text" placeholder="Enter ID" required />
+            </div>
+          </div>
+          <div class="button">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
